@@ -137,8 +137,8 @@ class Crawler:
                 self.api = self.set_spotify()
     
 if __name__ == '__main__':
-    key = "141b13d2b2294afcae74ee73b97e6fee" #input('Please, enter your API key: ')
-    skey = "27b4bdcccc5e41e6b31a865d5c394e66" #input('Please, now enter your secret API key: ')
+    key = "" #input('Please, enter your API key: ')
+    skey = "" #input('Please, now enter your secret API key: ')
     ob = Crawler(key=key, skey=skey)
     ob.scheduler([input('Enter your starting artist (seed node): ')])
     
